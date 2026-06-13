@@ -1,0 +1,27 @@
+project:
+  name: AgentFlow
+  status: in_progress
+  domain: "Natural Language Processing / Machine Learning / AI Systems"
+
+rag:
+  chunk_size_tokens: 350
+  chunk_overlap_tokens: 60
+  top_k: 5
+  reranking_enabled: false
+
+orchestration:
+  max_steps: 8
+  default_roles:
+    - planner
+    - retriever
+    - coder
+    - debugger
+    - validator
+
+evaluation:
+  metrics:
+    - task_completion_rate
+    - tool_call_success_rate
+    - retrieval_precision_at_k
+    - answer_faithfulness
+    - average_latency_ms

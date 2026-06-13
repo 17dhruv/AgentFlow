@@ -1,34 +1,17 @@
-# Dependencies
-node_modules/
-.venv/
-venv/
-__pycache__/
-*.py[cod]
-
-# Environment
 .env
 .env.*
 !.env.example
-
-# Build outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+.next/
 dist/
 build/
-.next/
-out/
-
-# Logs
+coverage/
+reports/
 *.log
-npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-
-# Databases and local state
-*.sqlite
-*.sqlite3
-.postgres/
-
-# IDE and OS
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
